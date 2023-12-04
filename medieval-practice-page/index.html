@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=medievalsharp:400" rel="stylesheet" />
+    <title>Class Filter</title>
+</head>
+
+<body>
+
+    <article>
+        <header id="headerapp">
+            <div class="header-top"></div>
+            <h1>{{welcomeRaiders}}</h1>
+        </header>
+
+        <div id="app" class="gameClassContainer">
+
+            <h2 class="classFilter">Class Filter:</h2>
+            <div class="gameClassContainerInner">
+
+                <div class="filter-button-container">
+                    <div class="filter">
+                        <h3>Filter:</h3>
+                    </div>
+                    <div class="button-container">
+                        <button @click="startsWithLetter = ''">All</button>
+                        <button @click="startsWithLetter = 'K'">K</button>
+                        <button @click="startsWithLetter = 'A'">A</button>
+                        <button @click="startsWithLetter = 'S'">S</button>
+                        <button @click="startsWithLetter = 'C'">C</button>
+                        <button @click="startsWithLetter = 'R'">R</button>
+                        <button @click="startsWithLetter = 'B'">B</button>
+                    </div>
+
+                    <ul>
+                        <li v-for="gameClassChar in gameCharFilter" :key="gameClassChar">
+                            {{ gameClassChar }}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </article>
+    </div>
+
+
+
+    <hr>
+
+    <div class="divSection">
+        <h4>History of the class:</h4>
+        <section>
+
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                et
+                dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                Stet
+                clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                amet,
+                consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                erat,
+                sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                no
+                sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                et
+                dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                Stet
+                clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                amet,
+                consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                erat,
+                sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                no
+                sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+        </section>
+
+        <section>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                et
+                dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                Stet
+                clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                amet,
+                consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                erat,
+                sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                no
+                sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                et
+                dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                Stet
+                clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                amet,
+                consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                erat,
+                sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                no
+                sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+        </section>
+    </div>
+
+
+    <div class="img-source">
+        <div class="img-src-container">
+            <h5>Image Sources:</h5>
+
+            <p>https://unsplash.com/de/fotos/ein-schwarz-weiss-foto-einer-weissen-wand-Bf9PT5qVZvM<br>
+                https://unsplash.com/de/fotos/brauner-holzlenker-auf-braunem-holztisch-4_ZvmLAeIZk</p>
+        </div>
+    </div>
+    <footer>
+        <a href="#First-Link">First-Link</a>
+        <a href="#First-Link">Second-Link</a>
+        <a href="#First-Link">Third-Link</a>
+
+    </footer>
+
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
